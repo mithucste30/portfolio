@@ -20,22 +20,23 @@ group :development, :test do
   gem 'quiet_assets'
 end
 
-gem 'sass-rails', '~> 5.0.0.beta1'
-gem 'sass', '3.4.5'
+gem 'sass', "~>3.2"
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails', '~> 4.0.0.beta2'  
 gem 'jbuilder', '~> 2.0'  
-gem 'foundation-rails'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'turbolinks'
-gem "haml"
 gem 'google-webfonts-rails'
+gem "font-awesome-rails"
+gem 'autoprefixer-rails'
+gem 'jquery-easing-rails'
+gem 'bootstrap-sass', '~> 3.3.0'
 # Use SCSS for stylesheets
 # Use Uglifier as compressor for JavaScript assets
 # Use CoffeeScript for .js.coffee assets and views
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-# gem 'therubyracer', platforms: :ruby
+# 
 # Use jQuery as the JavaScript library
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder

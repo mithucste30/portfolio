@@ -12,8 +12,10 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require foundation
-//= require turbolinks
-//= require_tree .
-
-$(function(){ $(document).foundation(); });
+//= require bootstrap-sprockets
+//= require jquery.easing
+//= require classie
+//= require jqBootstrapValidation
+//= require contact_me
+//= require cbpAnimatedHeader
+//= require freelancer
