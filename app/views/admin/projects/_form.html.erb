@@ -1,0 +1,53 @@
+<%= render 'form_javascripts' %>
+
+<%= form_for @item, url: options, html: { role: 'form', multipart: true } do |form| %>
+
+  <%= render 'helpers/admin/resources/errors' %>
+
+  <%#= build_form(fields, form) %>
+
+  <div class="form-group">
+    <%= form.label :title,  :class => "control-label" %>
+    <div class="controls">
+      <%= form.text_field :title, class: 'form-control' %>      
+    </div>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :description,  :class => "control-label" %>
+    <div class="controls">
+      <%= form.text_area :description, class: 'form-control', rows: '20' %>      
+    </div>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :url,  :class => "control-label" %>
+    <div class="controls">
+      <%= form.text_field :url, class: 'form-control' %>      
+    </div>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :photo,  :class => "control-label" %>
+    <div class="controls">
+      <%= form.file_field :photo %>      
+    </div>
+  </div>
+
+  <% if headless_mode? %>
+    <% unless @item.new_record? %>
+      <%= hidden_field_tag '_id', @item.id %>
+      <%= hidden_field_tag '_label', @item.to_label %>
+    <% end %>
+    <%= hidden_field_tag '_continue' %>
+  <% else %>
+    <% build_save_options.each do |key, value, special| %>
+      <%
+      klass = key.eql?(:_save) ? 'btn btn-primary' : 'btn btn-default'
+      options = { name: key, onclick: 'Typus.setConfirmUnload(false);', class: klass }
+      %>
+        <%= submit_tag t(value), options %>
+      <% end %>
+    <% end %>
+
+  <% end %>
