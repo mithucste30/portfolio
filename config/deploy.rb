@@ -17,7 +17,7 @@ set :rvm_path, '/home/deploy/.rvm'
 set :format, :pretty
 set :log_level, :debug
 set :pty, true
-set :linked_files, %w{config/database.yml}
+set :linked_files, %w{config/database.yml config/secrets.yml config/cloudinary.yml}
 set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}
 
 set :deploy_via, :remote_cache
@@ -29,6 +29,18 @@ namespace :deploy do
   task :upload_database_file do
     on roles(:all) do |host|
       upload! "config/database.yml", "#{shared_path}/config/database.yml"
+    end
+  end
+  
+  task :upload_secrets do
+    on roles(:all) do |host|
+      upload! "config/secrets.yml", "#{shared_path}/config/secrets.yml"
+    end
+  end
+  
+  task :upload_cloudinary do
+    on roles(:all) do |host|
+      upload! "config/cloudinary.yml", "#{shared_path}/config/cloudinary.yml"
     end
   end
   

@@ -19,3 +19,5 @@ public/uploads/*
 public/system/*
 public/assets/*
 /.rvmrc
+config/secrets.yml
+config/cloudinary.yml
