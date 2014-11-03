@@ -28,7 +28,6 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'turbolinks'
 gem 'google-webfonts-rails'
-gem "font-awesome-rails"
 gem 'autoprefixer-rails'
 gem 'jquery-easing-rails'
 gem 'bootstrap-sass', '~> 3.3.0'
