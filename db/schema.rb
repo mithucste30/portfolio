@@ -14,27 +14,27 @@
 ActiveRecord::Schema.define(version: 20141101143920) do
 
   create_table "admin_users", force: true do |t|
-    t.string   "first_name",      default: "",    null: false
-    t.string   "last_name",       default: "",    null: false
-    t.string   "role",                            null: false
-    t.string   "email",                           null: false
-    t.boolean  "status",          default: false
-    t.string   "token",                           null: false
-    t.string   "password_digest",                 null: false
-    t.string   "preferences"
+    t.string   "first_name",      limit: 255, default: "",    null: false
+    t.string   "last_name",       limit: 255, default: "",    null: false
+    t.string   "role",            limit: 255,                 null: false
+    t.string   "email",           limit: 255,                 null: false
+    t.boolean  "status",          limit: 1,   default: false
+    t.string   "token",           limit: 255,                 null: false
+    t.string   "password_digest", limit: 255,                 null: false
+    t.string   "preferences",     limit: 255
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  add_index "admin_users", ["email"], name: "index_admin_users_on_email", unique: true
+  add_index "admin_users", ["email"], name: "index_admin_users_on_email", unique: true, using: :btree
 
   create_table "projects", force: true do |t|
-    t.string   "title"
-    t.text     "description"
-    t.string   "url"
-    t.string   "photo"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.string   "title",       limit: 255
+    t.text     "description", limit: 65535
+    t.string   "url",         limit: 255
+    t.string   "photo",       limit: 255
+    t.datetime "created_at",                null: false
+    t.datetime "updated_at",                null: false
   end
 
 end

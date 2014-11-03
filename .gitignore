@@ -17,7 +17,7 @@ log/*
 nbproject/*
 public/uploads/*
 public/system/*
-public/assets/*
+public/assets
 /.rvmrc
 config/secrets.yml
 config/cloudinary.yml
