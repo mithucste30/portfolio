@@ -14,7 +14,6 @@ group :development, :test do
   gem 'capistrano-passenger'
   gem 'capistrano-rails-collection'
   gem 'capistrano-faster-assets', '~> 1.0'
-  gem 'capistrano-safe-deploy-to', '~> 1.1.1'
   gem "better_errors"
   gem "binding_of_caller"
   gem 'quiet_assets'
