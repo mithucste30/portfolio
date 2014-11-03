@@ -1,8 +1,6 @@
 source 'https://rubygems.org'
-# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0.beta2'
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+gem 'mysql2'
 
 group :development, :test do  
   gem 'byebug'  
@@ -32,6 +30,35 @@ gem "font-awesome-rails"
 gem 'autoprefixer-rails'
 gem 'jquery-easing-rails'
 gem 'bootstrap-sass', '~> 3.3.0'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Use SCSS for stylesheets
 # Use Uglifier as compressor for JavaScript assets
 # Use CoffeeScript for .js.coffee assets and views
