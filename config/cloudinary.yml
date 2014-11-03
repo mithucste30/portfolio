@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: portfolio
+  api_key: '997782424731525'
+  api_secret: FPNGK0TSOeMSeWJuV7MZzieiqRM
+  enhance_image_tag: true
+  static_image_support: false
+production:
+  cloud_name: portfolio
+  api_key: '997782424731525'
+  api_secret: FPNGK0TSOeMSeWJuV7MZzieiqRM
+  enhance_image_tag: true
+  static_image_support: true
+test:
+  cloud_name: portfolio
+  api_key: '997782424731525'
+  api_secret: FPNGK0TSOeMSeWJuV7MZzieiqRM
+  enhance_image_tag: true
+  static_image_support: false

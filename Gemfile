@@ -32,6 +32,9 @@ gem "font-awesome-rails"
 gem 'autoprefixer-rails'
 gem 'jquery-easing-rails'
 gem 'bootstrap-sass', '~> 3.3.0'
+gem 'carrierwave'
+gem 'cloudinary'
+gem "typus", github: "typus/typus"
 # Use SCSS for stylesheets
 # Use Uglifier as compressor for JavaScript assets
 # Use CoffeeScript for .js.coffee assets and views
