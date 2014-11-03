@@ -12,6 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery.growl
 //= require bootstrap-sprockets
 //= require jquery.easing
 //= require classie

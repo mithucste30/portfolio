@@ -24,6 +24,7 @@ $navbar-default-brand-hover-color: #18bc9c;
 $navbar-default-brand-hover-bg: transparent;
 $font-family-base: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
 
+@import "jquery.growl";
 @import "font-awesome";
 @import "bootstrap-sprockets";
 @import "bootstrap";

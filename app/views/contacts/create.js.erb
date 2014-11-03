@@ -1,0 +1,6 @@
+<% if @success %>
+  $.growl.notice({ title: "Success!", message: '<%= @msg %>' });
+  $('#new_contact')[0].reset();
+<% else %>
+  $.growl.error({ title: "Error!", message: '<%= @msg %>' });
+<% end %>

@@ -34,6 +34,7 @@ gem 'bootstrap-sass', '~> 3.3.0'
 gem 'carrierwave'
 gem 'cloudinary'
 gem "typus", github: "typus/typus"
+gem 'protected_attributes'
 
 
 

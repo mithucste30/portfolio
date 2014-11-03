@@ -1,0 +1,16 @@
+<% if flash.any? %>
+  <script type="text/javascript">
+    $(document).ready(function(){
+  <% flash.each do |name, msg| %>
+    <% if name == :success %>
+          $.growl.notice({ title: "Success!", message: "<%= msg %>" });
+    <% elsif name == :error %>
+          $.growl.error({ title: "Error!", message: "<%= msg %>" });
+    <% elsif name == :alert %>
+          $.growl.warning({ title: "Warning!", message: "<%= msg %>" });
+    <% end %>
+    <% flash.delete(name) -%>
+  <% end %>
+    })
+  </script>
+<% end %>
