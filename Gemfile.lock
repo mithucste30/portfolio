@@ -1,3 +1,11 @@
+GIT
+  remote: git://github.com/typus/typus.git
+  revision: eaac27106a6e9b688c742020103c442a32c8a469
+  specs:
+    typus (4.0.0.beta1)
+      bcrypt (~> 3.1.5)
+      rails (~> 4.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -40,6 +48,8 @@ GEM
     arel (6.0.0.beta2)
     autoprefixer-rails (3.1.2.20141016)
       execjs
+    aws_cf_signer (0.1.3)
+    bcrypt (3.1.9)
     better_errors (2.0.0)
       coderay (>= 1.0.0)
       erubis (>= 2.6.6)
@@ -70,6 +80,14 @@ GEM
     capistrano-rvm (0.1.2)
       capistrano (~> 3.0)
       sshkit (~> 1.2)
+    carrierwave (0.10.0)
+      activemodel (>= 3.2.0)
+      activesupport (>= 3.2.0)
+      json (>= 1.7)
+      mime-types (>= 1.16)
+    cloudinary (1.0.77)
+      aws_cf_signer
+      rest-client
     coderay (1.1.0)
     coffee-rails (4.0.1)
       coffee-script (>= 2.2.0)
@@ -106,6 +124,7 @@ GEM
       addressable (~> 2.3)
     letter_opener (1.2.0)
       launchy (~> 2.2)
+    libv8 (3.16.14.7)
     loofah (2.0.1)
       nokogiri (>= 1.5.9)
     mail (2.6.1)
@@ -118,6 +137,7 @@ GEM
     net-scp (1.2.1)
       net-ssh (>= 2.6.5)
     net-ssh (2.9.1)
+    netrc (0.8.0)
     nokogiri (1.6.3.1)
       mini_portile (= 0.6.0)
     quiet_assets (1.0.3)
@@ -152,7 +172,11 @@ GEM
     rake (10.3.2)
     rdoc (4.1.2)
       json (~> 1.4)
-    sass (3.4.6)
+    ref (1.0.5)
+    rest-client (1.7.2)
+      mime-types (>= 1.16, < 3.0)
+      netrc (~> 0.7)
+    sass (3.4.7)
     sdoc (0.4.1)
       json (~> 1.7, >= 1.7.7)
       rdoc (~> 4.0)
@@ -171,6 +195,9 @@ GEM
       colorize
       net-scp (>= 1.1.2)
       net-ssh (>= 2.8.0)
+    therubyracer (0.12.1)
+      libv8 (~> 3.16.14.0)
+      ref
     thor (0.19.1)
     thread_safe (0.3.4)
     tilt (1.4.1)
@@ -202,6 +229,8 @@ DEPENDENCIES
   capistrano-rails
   capistrano-rails-collection
   capistrano-rvm
+  carrierwave
+  cloudinary
   coffee-rails (~> 4.0.0)
   font-awesome-rails
   google-webfonts-rails
@@ -215,6 +244,8 @@ DEPENDENCIES
   sass (~> 3.2)
   sdoc (~> 0.4.0)
   spring
+  therubyracer
   turbolinks
+  typus!
   uglifier (>= 1.3.0)
   web-console (~> 2.0.0.beta4)

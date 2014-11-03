@@ -1,7 +1,7 @@
 SSHKit.config.command_map[:rake] = "bundle exec rake"
 lock '3.2.1'
 
-set :application, 'web-nerd'
+set :application, 'portfolio'
 set :scm, :git
 set :repo_url, 'git@github.com:mithucste30/portfolio.git'
 
@@ -39,7 +39,6 @@ namespace :deploy do
     end
   end
 
-  before 'assets:precompile', 'cleanup_assets'
   after :publishing, :restart
   after :finishing, 'deploy:cleanup'
 
