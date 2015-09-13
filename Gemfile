@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 gem 'rails', '4.2.0.beta2'
-gem 'mysql2'
+gem 'pg'
 
 group :development, :test do  
   gem 'byebug'  
@@ -35,6 +35,8 @@ gem 'carrierwave'
 gem 'cloudinary'
 gem "typus", github: "typus/typus"
 gem 'protected_attributes'
+
+gem 'rails_12factor', group: :production
 
 
 
